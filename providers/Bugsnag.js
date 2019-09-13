@@ -8,8 +8,7 @@ class BugsnagProvider extends ServiceProvider {
     const Config = this.app.use('Adonis/Src/Config')
     this.app.singleton('Perafan/Bugsnag', () => {
       const apiKey = Config.get('bugsnag.apiKey')
-      bugsnag(apiKey)
-      return bugsnag
+      return bugsnag(apiKey)
     })
   }
 
