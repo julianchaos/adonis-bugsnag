@@ -13,7 +13,7 @@ class BugsnagProvider extends ServiceProvider {
     })
   }
 
-  * boot () {
+  boot () {
     this.app.alias('Perafan/Bugsnag', 'Bugsnag')
   }
 }
